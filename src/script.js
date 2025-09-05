@@ -1,12 +1,10 @@
 document.getElementById('saludarBtn').addEventListener('click', function() {
-  // Obtenemos el nombre del campo de texto
   const nombre = document.getElementById('nombre').value;
+  const genero = document.getElementById('genero').value;
 
-  // Obtener la hora actual
   const fechaActual = new Date();
   const horaActual = fechaActual.getHours();
 
-  // Saludar dependiendo de la hora
   let saludoHora = '';
   if (horaActual < 12) {
     saludoHora = 'Buenos días';
@@ -16,8 +14,15 @@ document.getElementById('saludarBtn').addEventListener('click', function() {
     saludoHora = 'Buenas noches';
   }
 
+  let saludoGenero = '';
+  if (genero === 'masculino') {
+    saludoGenero = 'Sr.';
+  } else if (genero === 'femenino') {
+    saludoGenero = 'Sra.';
+  }
+
   if (nombre) {
-    document.getElementById('saludo').textContent = `${saludoHora}, ${nombre}!`;
+    document.getElementById('saludo').textContent = `${saludoHora}, ${saludoGenero} ${nombre}!`;
   } else {
     document.getElementById('saludo').textContent = `${saludoHora}, ¿cómo te llamas?`;
   }
