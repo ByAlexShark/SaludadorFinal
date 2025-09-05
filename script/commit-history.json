@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "3d4aa760a720bf1b926ca7ebe17071aa029f5974",
     "author": "ByAlexShark",
     "commit": {
       "date": "2025-09-05T14:17:33.000Z",
       "message": "Saludar con 'Hola'",
-      "url": "https://github.com/ByAlexShark/SaludadorFinal/commit/HEAD"
+      "url": "https://github.com/ByAlexShark/SaludadorFinal/commit/3d4aa760a720bf1b926ca7ebe17071aa029f5974"
     },
     "stats": {
       "total": 2116,
       "additions": 1055,
       "deletions": 1061,
+      "date": "2025-09-05"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2025-09-05T14:22:14.000Z",
+      "message": "Pedir el nombre y saludar con nombre",
+      "url": "https://github.com/ByAlexShark/SaludadorFinal/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 12,
+      "deletions": 2,
       "date": "2025-09-05"
     },
     "coverage": 100,

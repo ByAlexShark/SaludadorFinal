@@ -1,3 +1,9 @@
 document.getElementById('saludarBtn').addEventListener('click', function() {
-  document.getElementById('saludo').textContent = 'Hola';
+  const nombre = document.getElementById('nombre').value;
+
+  if (nombre) {
+    document.getElementById('saludo').textContent = `Hola, ${nombre}!`;
+  } else {
+    document.getElementById('saludo').textContent = 'Hola, ¿cómo te llamas?';
+  }
 });
